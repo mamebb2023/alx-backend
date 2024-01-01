@@ -61,4 +61,4 @@ class Server:
             'page_size': len(page_data),
             'data': page_data,
         }
-        return page_info 
+        return page_info
