@@ -22,4 +22,4 @@ babel = Babel(app)
 def index():
     """ route to home page (index.html)
     """
-    return render_template("0-index.html")
+    return render_template("1-index.html")
