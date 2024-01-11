@@ -24,7 +24,7 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale() -> str:
-    """ Retrieves the locale for a web page
+    """ Retrive the language
     """
     locale = request.args.get('locale')
     if locale in app.config['LANGUAGES']:
@@ -38,6 +38,6 @@ def index() -> str:
     """
     return render_template("4-index.html")
 
-
 if __name__ == "__main__":
     app.run()
+
