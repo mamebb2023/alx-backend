@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-
+""" Pagination module
 """
 import csv
 import math
@@ -42,7 +41,7 @@ class Server:
             page_size > 0
 
         idx = index_range(page, page_size)
-        data = self.dataset() 
+        data = self.dataset()
 
         try:
             return [data[i] for i in range(idx[0], idx[1])]
